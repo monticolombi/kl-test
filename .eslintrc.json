@@ -1,0 +1,84 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["react", "prettier", "simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
+  "rules": {
+    "camelcase": "off",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default-member": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": ["CustomInputLabel"],
+        "labelAttributes": ["label"],
+        "controlComponents": ["CustomInput"],
+        "depth": 3
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "required": {
+          "every": ["id"]
+        }
+      }
+    ],
+    "lines-between-class-members": "off",
+    "no-console": "error",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-throw-literl": "off",
+    "no-undef": "off",
+    "one-var": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/default-props-match-prop-types": 2,
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "shorthandLast": false,
+        "ignoreCase": false,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ],
+    "react/forbid-prop-types": "off",
+    "react/jsx-no-bind": "off",
+    "react/no-danger": "off",
+    "react/no-unused-prop-types": 1,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/sort-prop-types": [2, {
+      "requiredFirst": false
+    }],
+    "simple-import-sort/imports": "error",
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "sort-imports": "off",
+    "sort-keys-fix/sort-keys-fix": "off",
+    "sort-keys": "off",
+    "sort-vars": "off"
+  }
+}

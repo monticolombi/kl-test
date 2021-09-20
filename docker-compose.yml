@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  web: 
+    image: 'kidsloop'
+    build:
+      context: .
+      target: dev
+    tty: true
+    volumes:
+      - ./src:/app/src
+      - ./server:/app/server
+      - ./pages:/app/pages
+      - ./app/.nde_modules
+      - ./app/.next
+    restart: always
+    ports:
+      - '3000:3000'
+      - '9229:9229'
